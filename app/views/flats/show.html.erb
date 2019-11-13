@@ -1,0 +1,12 @@
+<h1><%= @flat.name %></h1>
+<ul class="site-links">
+  <li><%= link_to "Edit", edit_flat_path(@flat), class: 'btn btn-primary' %></li>
+  <li><%= link_to "Delete", flat_path(@flat), method: :delete, data: { confirm: "Are you sure?" }, class: 'btn btn-primary'%></li>
+  <li><%= link_to "Back", flats_path, class: 'btn btn-primary'%></li>
+</ul>
+<p><%= @flat.description %></p>
+<p><strong>Address:</strong> <%= @flat.address %></p>
+<p><strong>Price per night:</strong> <%= @flat.price_per_night %></p>
+<p><strong>Number of guests:</strong> <%= @flat.number_of_guests %></p>
+<img class="flat-image" src= <%= @flat.image %> >
+

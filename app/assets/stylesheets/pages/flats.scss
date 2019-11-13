@@ -1,0 +1,37 @@
+h1 {
+  text-align: center;
+}
+
+h2 {
+  color: #707078, !important;
+}
+.flat {
+  background-color: white;
+  margin: 10px;
+  padding: 10px;
+}
+
+.flats {
+  flex-direction: column;
+  border-radius: 5px;
+}
+
+.flat-image {
+  max-width: 70vw;
+  text-align: center;
+  margin: 20px;
+}
+
+.index-flat-image {
+  max-height: 200px;
+  margin: 0;
+}
+
+.site-links {
+  text-align: center;
+}
+.site-links li {
+  list-style: none;
+  display: inline;
+  margin: 10px;
+}

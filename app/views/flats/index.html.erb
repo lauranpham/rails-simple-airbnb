@@ -1,0 +1,18 @@
+<h1>Flats</h1>
+
+<%= link_to "Add +", new_flat_path, class: 'btn btn-primary'%>
+<br>
+
+<div class="flats d-flex ">
+  <% @flats.each do |flat| %>
+    <div class="flat d-flex">
+      <div class="flat-info">
+        <h2><%= link_to flat.name, flat_path(flat)%></h2>
+        <p><%= flat.description %></p>
+      </div>
+      <div class="flat-image">
+        <img class="index-flat-image" src= <%= flat.image %> >
+      </div>
+    </div>
+  <% end %>
+</div>
